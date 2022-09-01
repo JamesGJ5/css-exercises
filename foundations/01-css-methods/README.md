@@ -22,3 +22,8 @@ The properties you need to add to each element are:
 - Does the `div` element have CSS added via the external method?
 - Does the `p` element have CSS added via the internal method?
 - Does the `button` element have CSS added via the inline method?
+
+# Specifics
+- Only use type selectors for this exercise when adding styles via the external and internal methods
+- Use keywords for colors (e.g. "blue") instead of using RGB or HEX values
+- For each element, add the properties mentioned after where it is in the asterisked list above
