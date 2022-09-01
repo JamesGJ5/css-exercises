@@ -8,13 +8,19 @@ body{
   font-weight: 800;
 }
 
+.para {
+  font-size: 22px;
+}
+
 .small-para {
   font-size: 14px;
   font-weight: 800;
 }
 
-.para {
-  font-size: 22px;
+.button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
 }
 
 .confirm {
@@ -23,13 +29,13 @@ body{
   font-weight: bold;
 } 
 
-.button {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font-size: 20px;
-}
-
-.child {
+/* As for the 'div' element in index.html that has both 'text' and 'child' class attributes, 
+both of the below declarations would apply to it and thus conflict. In each of the below blocks, there are class 
+selectors and type selectors; class selectors have the highER priority, but there is the same number of class selectors in each 
+declaration block, so we can't consider class selectors in resolving the conflict. Move onto the type 
+selectors, and you see that there is 1 type selector in the second declaration block, but 0 in the first. 
+Therefore, the second declaration block wins.*/
+/* .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
@@ -39,4 +45,20 @@ div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
+} */
+
+/* However, now that .child is replaced with div.child, both have the same numbers of each selector, so 
+we can't consider selector quantity in resolving conflict. However, since now div.child is below div.text, 
+div.child takes priority. */
+
+div.text {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+}
+
+div.child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
 }
