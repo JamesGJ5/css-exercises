@@ -16,3 +16,7 @@ The properties you need to add are:
 ### Self Check
 - Do the elements that contain the text "This should be styled" have the correct styles applied?
 - Do the elements that contain the text "This should be unstyled" have no styles applied?
+
+# Important:
+- Can use type or class selectors
+- Can even try combining a type *and* class selector for the descendant combinator
