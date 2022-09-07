@@ -7,21 +7,42 @@ body {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  padding: 8px;
 }
 
 .title {
   background: #e3f4ff;
+  padding: 8px;
+  /* Default margin-top and margin-bottom 
+  for header types vary between browsers, 
+  so best to override them */
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
 }
 
 .content {
   background: #e3f4ff;
+  margin-bottom: 8px;
+  padding: 16px 8px;
 }
 
 .button-container {
   background: #e3f4ff;
+  padding: 8px;
+  text-align: center;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  display: block;
+  margin: auto;
+  padding: 8px 24px;
 }
+
+/* Still have to:
+1. Make sure there's 8px of space 
+between title and top edge of card, 
+and between button container and 
+bottom edge of card */
