@@ -7,15 +7,15 @@ body {
   background: pink;
   border: 3px solid blue;
   /* CHANGE ME */
-  padding: 0px;
-  margin: 0px;
+  padding: 32px;
+  margin: 12px;
 }
 
 .two {
   background: lightblue;
   border: 3px solid purple;
   /* CHANGE ME */
-  margin-bottom: 0px;
+  margin-bottom: 48px;
 }
 
 .three {
@@ -23,6 +23,15 @@ body {
   border: 3px solid brown;
   width: 200px;
   /* CHANGE ME */
-  padding: 0px;
-  margin-left: 0px;
+  padding: 32px;
+  /* Max-width is 600px and that is what the .two div element (since it is a 
+  block and it stretches to fill its container) 
+  stretches to, especially since the .two CSS above doesn't have anything to 
+  override its width (from left border exterior to right border exterior) being 
+  600px. Since we want to line up the .three div element's left border with 
+  that of the .two div element, and the width of the totality of this .three div 
+  element is (200 + 2 * 32 + 2 * 3)px = 270px, margin-left must be (600 - 270)px 
+  = 330px. However, can just set margin-left: auto */
+  /* margin-left: 330px; */
+  margin-left: auto;
 }
