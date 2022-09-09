@@ -19,3 +19,10 @@ As with the last example, this one needs to be flexible in the middle, with item
 - Items are arranged horizontally as seen in the outcome image.
 - There is 16px between each item on both sides of the header.
 - flex is used to arrange everything.
+
+# Important
+
+- Probably need to put containers around items to separate items that go on the left of the header from those on the right
+- Will nest flex containers inside each other
+- Flexible in middle with items pushed to left and right
+- Self check specifics
