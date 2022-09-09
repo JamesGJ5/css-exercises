@@ -17,3 +17,8 @@ For this one you will need to edit the HTML a little bit too. We can't be making
 - The items are arranged horizontally on the page.
 - The items are only 200px wide and the text wraps.
 - The item text is centered.
+
+# Important
+
+- Will need to edit the HTML a little bit
+- Will eant to add containers around the various elements so you can flex them
